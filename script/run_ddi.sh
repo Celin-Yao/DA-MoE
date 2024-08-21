@@ -1,0 +1,1 @@
+ python ../link_prediction/main_link_ddi.py --dataset ogbl-ddi --gnn_type GCN_Moe --gate_type GCN --hidden_channels 256 --num_layers $j --k 3 --seed 42  --save_dir results_gcn_moe --device cuda:0 --coef 0.0001 --dropout 0.5 --min_layers 2 --epochs 150 --lr 0.005

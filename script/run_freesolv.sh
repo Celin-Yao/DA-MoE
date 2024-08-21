@@ -1,0 +1,1 @@
+python ../graph_classification/train/main_graph_ogb.py --dataset ogbg-molfreesolv --gnn_type gcn --gate_type GIN --emb_dim 300 --num_layers 6 --k 4 --seed 42 --save_dir results_gin_moe --device cuda:0 --min_layers 2 --epochs 300 --coef 0.001

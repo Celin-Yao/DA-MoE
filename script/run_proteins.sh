@@ -1,0 +1,1 @@
+python ../graph_classification/train/main_graph.py --dataset PROTEINS --gnn_type GIN_Moe  --gate_type GIN --hidden_channels 32 --num_layers 5 --k 2 --seed 42  --save_dir results_gin_moe --device cuda:0 --epochs 350 --min_layers 2 --coef 0.001
