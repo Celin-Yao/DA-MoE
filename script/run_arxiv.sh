@@ -1,1 +1,1 @@
-python ../node_classification/main_node_ogb.py --dataset ogbn-arxiv --gnn_type GCN_Moe --gate_type GCN --hidden_channels 256 --num_layers 3 --k 3 --seed 42  --save_dir results_gcn_moe --device cuda:0 --coef 0.001 --dropout 0.6 --min_layers 2 --epochs 500
+python ../node_classification/main_node_arxiv.py --dataset ogbn-arxiv --gnn_type GCN_Moe --gate_type liner --hidden_channels 256 --num_layers 3 --k 3 --seed 42  --save_dir results_gcn_moe --device cuda:0 --coef 0.001 --dropout 0.5 --min_layers 2 --epochs 500

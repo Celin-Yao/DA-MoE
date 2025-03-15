@@ -1,5 +1,5 @@
 import torch
-from model.moe_ogb import MoE_OGB
+from model_proteins.moe_ogb import MoE_OGB
     
 class GCN_OGB_Moe(torch.nn.Module):
     def __init__(self,gnn_type,gate_type, in_channels, hidden_channels, out_channels, num_layers,min_layers,topK,coef,

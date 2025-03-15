@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from torch.distributions.normal import Normal
-from model.gnn import GCN_OGB,SAGE_OGB
+from model_proteins.gnn import GCN_OGB,SAGE_OGB
 
 
 class MoE_OGB(nn.Module):
