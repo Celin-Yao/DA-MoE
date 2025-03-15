@@ -4,8 +4,8 @@ import sys
 sys.path.append('../')
 import torch
 import torch.nn.functional as F
-from model.gnn import GCN_OGB
-from model.gnn_moe import GCN_OGB_Moe
+from model_arxiv.gnn import GCN_OGB
+from model_arxiv.gnn_moe import GCN_OGB_Moe
 import numpy as np
 import random
 from logger import Logger
@@ -148,7 +148,7 @@ def main():
 
                 if epoch % args.log_steps == 0:
                     train_acc, val_acc, test_acc = result
-                    print(f'Run: {run + 1:02d}, '
+                    print(f'Seed: {seed:02d}, '
                         f'Epoch: {epoch:03d}, '
                         f'Loss: {loss:.4f}, '
                         f'Train: {100 * train_acc:.4f}%, '
